@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+
+input {
+  padding: 5px;
+  border-radius: 25px;
+  background-color: rgba(243, 239, 236, 0.2);
+  border: 1px solid #fff;
+  color:white;
+  width: 20vw;
+}
+#searchbutton {
+  margin-left: 10px;
+  background-color: #4f777c;
+  border: 1px solid #728cb6;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#searchbutton:hover {
+  background-color: #0e3b3e;
+  border: 1px solid #0f3538;
+}
+
+
+#container {
+  padding-top: 10px;
+  background-color: #1b5d73;
+  border-radius: 10px;
+  width: 50vw;
+  min-height: 40vh;
+  color: aliceblue;
+}
+
+.row {
+  text-align: center;
+}
+
+#h1 {
+  vertical-align: middle;
+  display: flex;
+  font-size: 4em;
+  line-height: 1.5;
+}
+
+#city {
+  font-size: 2em;
+}
+
+
+
+
+.spacer {
+  min-height: 30vh;
+}
+
+.flexweather {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+
+#weatherlogo {
+  display: flex;
+  width: 100px;
+  vertical-align: middle;
+}
+
+.savedcard {
+  display: flex;
+  height: 4.5rem;
+  padding: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  #container {
+    width: 80vw;
+  }
+
+  input {
+    min-width: 40vw;
+  }
+}
