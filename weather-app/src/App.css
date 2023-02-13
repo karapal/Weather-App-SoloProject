@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+body{
+  background:linear-gradient(#e66465, #9198e5);
+  background-repeat: no-repeat;
+}
 
 input {
   padding: 5px;
@@ -27,12 +30,14 @@ input {
 
 
 #container {
+  margin-top: 250px;
   padding-top: 10px;
   background-color: #1b5d73;
   border-radius: 10px;
-  width: 50vw;
+  width: 40vw;
   min-height: 40vh;
   color: aliceblue;
+  margin-bottom: 300px;
 }
 
 .row {
@@ -51,12 +56,6 @@ input {
 }
 
 
-
-
-.spacer {
-  min-height: 30vh;
-}
-
 .flexweather {
   display: flex;
   width: 25%;
@@ -69,11 +68,6 @@ input {
   vertical-align: middle;
 }
 
-.savedcard {
-  display: flex;
-  height: 4.5rem;
-  padding: 5px;
-}
 
 @media screen and (max-width: 720px) {
   #container {

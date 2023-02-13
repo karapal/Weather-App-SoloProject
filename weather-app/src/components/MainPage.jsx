@@ -3,6 +3,7 @@ import { Button, Container } from "react-bootstrap";
 
 
 
+
 class MainPage extends React.Component {
   state = {
     isLoading: true,
@@ -56,10 +57,12 @@ class MainPage extends React.Component {
           </Button>
           
           <h2>Current Weather</h2>
+          <p id="city">{this.state.cities.name}</p>
 
           <div>
             <div className="flexweather">
               <h1 id="h1">{Math.round(this.state.cities?.main?.temp)}C</h1>{" "}
+              
               {this.state.cities?.weather?.map((weather) => (
                 <img
                   id="weatherlogo"
@@ -68,9 +71,23 @@ class MainPage extends React.Component {
                   src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}
                   alt=""
                 ></img>
+              
               ))}
+              
             </div>
-            <p id="city">{this.state.cities.name}</p>
+            
+            <h3>Feels like: {Math.round(this.state.cities?.main?.feels_like)}C</h3>
+            <h4>
+                {"Local Time: "}
+                {new Date().setTime(
+                  new Date().getUTCHours() + this.state.cities?.timezone / 60 / 60
+                )}{" "}
+                : {new Date().getMinutes()}  
+              </h4>
+           
+
+            
+
            
           </div>
 
